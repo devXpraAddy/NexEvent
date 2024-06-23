@@ -12,7 +12,7 @@ const getMessages = async (req, res) => {
 const sendMessage = async (req, res) => {
   try {
     const { name, email, subject, message } = req.body;
-    console.log(req.body);
+    // console.log(req.body);
     if (!name || !email || !subject || !message) {
       return res.status(400).json({
         success: false,
